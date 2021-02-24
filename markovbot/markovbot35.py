@@ -839,7 +839,7 @@ class MarkovBot():
 					# StopIteration Exception every now and again.)
 					try:
 						# Attempt to get the next tweet.
-						tweet = iterator.next()
+						tweet = next(iterator)
 					except StopIteration:
 						# Restart the iterator, and skip the rest of
 						# the loop.
