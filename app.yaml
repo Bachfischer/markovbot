@@ -1,5 +1,7 @@
 runtime: python38
 
 service: default
+manual_scaling:
+  instances: 1
 
 entrypoint: python tweetbot.py
